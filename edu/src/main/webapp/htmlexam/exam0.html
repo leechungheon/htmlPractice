@@ -3,26 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <title>어디출력될까?</title>
+<style>
+	h2{
+		color:green;
+		background-color:yellow;
+	}
+	.target:hover{
+		opacity:0.5; <!-- 투명도 -->
+	}
+	#dooly{
+		border:2px solid green;
+	}
+</style>
 </head>
 <body>
-<h1>자주 사용되는 HTML 태그들</h1>
+<h1 style="color:blue">자주 사용되는 <span style="color:red">HTML </span>태그들</h1>
 <hr> <!-- 수평선 -->
 <h2>하이퍼링크 설정</h2>
 <a href="http://www.w3schools.com/tags/default.asp">HTML 학습사이트</a>
 <a href="http://www.naver.com/">네이버</a>
 <h2>이미지 출력</h2>
-<img src="http://localhost:8088/edu/images/olaf.jpg">
-<img src="/edu/images/duke.png"  width="200"/><!-- 종료태그가 없어서 둘 다 사용 가능 -->
-<!-- width만 200픽셀 조정했는데 높이도 비율적으로 같이 조정됨 -->
-<img src="../images/doolys.jpg">
-<!-- a태그와 img태그는 자동으로 행바꿈 x, 인라인태그라고 함 -->
-<h2>순서가 있는 리스트</h2> <!-- ordered list -->
+<img src="http://localhost:8088/edu/images/olaf.jpg" class="target">
+<img src="/edu/images/duke.png"  width="200" class="target">
+<img id="dooly" src="../images/doolys.jpg">
+<h2>순서가 있는 리스트</h2> 
 <ol>
 	<li>HTML</li>
 	<li>CSS</li>
 	<li>JavaScript</li>
 </ol>
-<h2>순서가 없는 리스트</h2> <!-- unordered list -->
+<h2>순서가 없는 리스트</h2>
 <ul>
 	<li>HTML</li>
 	<li>CSS</li>
