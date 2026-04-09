@@ -16,9 +16,12 @@
 			return day[date.getDay()];
 		}
 	}
-	let y = window.prompt("년");
-	let m = window.prompt("월");
-	let d = window.prompt("일");
+	let yy = window.prompt("년");
+	let mm = window.prompt("월");
+	let dd = window.prompt("일");
+	let y = Number(yy);
+	let m = Number(mm);
+	let d = Number(dd);
 	if(getKorDay(y,m-1,d)==undefined){
 		document.write("<h1 style='color:red'>결과 없음</h1>");
 	}else {
