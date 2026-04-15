@@ -10,16 +10,16 @@
 </head>
 <body>
 <%
-	LocalDate ld = LocalDate.now();	
+	LocalDate ld = LocalDate.now();
 %>
-<%= ld.getYear() %>년  
+<%= ld.getYear() %>년
 <%= ld.getMonthValue() %>월
 <%= ld.getDayOfMonth() %>일
 <hr>
 <%
 	LocalDateTime ldt = LocalDateTime.now();	
 %>
-<%= ldt.getYear() %>년  
+<%= ldt.getYear() %>년
 <%= ldt.getMonthValue() %>월
 <%= ldt.getDayOfMonth() %>일
 <%= ldt.getHour() %>시
