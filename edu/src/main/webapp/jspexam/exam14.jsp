@@ -9,7 +9,7 @@
 <body>
 <h2>JSP에서의 HttpSession 객체</h2>
 <hr>
-<%= session.isNew() %><br>
+<%= session.isNew() %><br> 
 <%= session.getId() %><br>
 <%= session.getCreationTime() %><br>
 <%= new java.util.Date(session.getCreationTime()) %><br>
